@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify SSL certificates</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <h1>Verify SSL certificates</h1>
+    <form name="certForm" action="verify.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="csr">CSR file:</label>
+            <input type="file" name="csr" id="csr" accept=".csr"/>
+        </div>
+        <div>
+            <label for="key">KEY file:</label>
+            <input type="file" name="key" id="key" accept=".key"/>
+        </div>
+        <div>
+            <label for="crt">CRT file:</label>
+            <input type="file" name="crt" id="crt" accept=".crt,.cert"/>
+        </div>
+
+        <button type="submit">Check</button>
+        <button type="reset">Reset</button>
+    </form>
+</div>
+</body>
+</html>
