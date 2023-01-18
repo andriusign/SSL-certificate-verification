@@ -1,4 +1,4 @@
-# Verify SSL certificates
+# Verify SSL certificates Test
 
 This is a simple app to verify that .CSR, .KEY and generated .CRT all match.
 It will ensure that your generated .CRT has been issued using your generated .CSR.
